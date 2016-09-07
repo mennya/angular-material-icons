@@ -1,2 +1,2 @@
-require('./angular-material-icons');
-module.exports = 'ngMdIcons';
+require('./dist/ny-angular-material-icons.js');
+module.exports = 'ny-angular-material-icons';
