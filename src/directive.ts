@@ -4,11 +4,11 @@ module nyMdIcons {
   var XMLNS = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ';
   declare var SVGMorpheus;
 
-  function NyMdIcon(mnMdIcon: nyMdIcons.INyMdIconProvider): ng.IDirective {
+  function NyMdIcon(nyMdIcon: nyMdIcons.INyMdIconProvider): ng.IDirective {
     return {
       restrict: 'A',
       link: ($scope: ng.IScope, $element: ng.IAugmentedJQuery, $attr: ng.IAttributes) => {
-        var shapes = mnMdIcon.shapes;
+        var shapes = nyMdIcon.shapes;
         var icon;
         var size;
 
@@ -16,7 +16,7 @@ module nyMdIcons {
         render();
 
         // watch for any changes
-        if (undefined !== $attr['observe']) $attr.$observe('mnIcon', replace);
+        if (undefined !== $attr['observe']) $attr.$observe('nyMdIcon', replace);
         if ($attr['size']) $attr.$observe('size', resize);
 
         function getSvgHtml(size, path) {
@@ -25,8 +25,8 @@ module nyMdIcons {
         }
 
         function render() {
-          if (!$attr['mnIcon']) icon = DEFAULT_ICON;
-          if ($attr['mnIcon']) icon = $attr['mnIcon'];
+          if (!$attr['nyMdIcon']) icon = DEFAULT_ICON;
+          if ($attr['nyMdIcon']) icon = $attr['nyMdIcon'];
 
           if (!shapes[icon]) icon = DEFAULT_ICON;
 

@@ -21,10 +21,11 @@
   "homepage": "https://github.com/mennya/ny-angular-material-icons",
   "dependencies": {
     "angular": ">=1.5.0",
-    "gulp-concat-util": "^0.5.5",
-    "gulp-rename": "^1.2.2",
-    "gulp-typescript": "^2.13.6",
-    "gulp-uglify": "^2.0.0",
+    "gulp-angular-filesort": "1.1.1",
+    "gulp-concat-util": "0.5.5",
+    "gulp-rename": "1.2.2",
+    "gulp-typescript": "2.13.6",
+    "gulp-uglify": "2.0.0",
     "typings": "1.3.3"
   },
   "devDependencies": {

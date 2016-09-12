@@ -6,7 +6,7 @@
   ],
   "description": "AngularJS directive to use Material Design icons with custom fill color and size.",
   "main": [
-      "ny-angular-material-icons.min.js"
+      "./dist/ny-angular-material-icons.js"
   ],
   "keywords": [
     "angular",
