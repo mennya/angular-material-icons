@@ -3,7 +3,7 @@ module nyMdIcons {
   var DEFAULT_SIZE = 24;
   var XMLNS = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ';
   declare var SVGMorpheus;
-
+  /* @ngInject */
   function NyMdIcon(nyMdIcon: nyMdIcons.INyMdIconProvider): ng.IDirective {
     return {
       restrict: 'A',

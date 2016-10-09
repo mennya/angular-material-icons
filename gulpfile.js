@@ -7,6 +7,7 @@ gulp.task('build', function () {
   return gulp.src(['./src/*.ts'])
     .pipe(g.typescript())
     .pipe(g.angularFilesort())
+    .pipe(g.ngAnnotate())
     .pipe(g.concatUtil('app.js'))
     .pipe(g.rename('ny-angular-material-icons.js'))
     .pipe(gulp.dest('dist'))
