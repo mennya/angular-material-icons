@@ -1,6 +1,6 @@
 {
   "name": "ny-angular-material-icons",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "menya",
   "description": "AngularJS directive to use Material Design icons with custom fill color and size.",
   "main": "index",
@@ -35,8 +35,6 @@
     "gulp-uglify": "2.0.0"
   },
   "scripts": {
-    "postinstall": "bower install",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
