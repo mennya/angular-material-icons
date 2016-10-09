@@ -1,6 +1,6 @@
 {
   "name": "ny-angular-material-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "menya",
   "description": "AngularJS directive to use Material Design icons with custom fill color and size.",
   "main": "index.js",
