@@ -70,7 +70,7 @@ module nyMdIcons {
       }
     };
   }
-
+  NyMdIcon.$inject = ["nyMdIcon"];
   angular
     .module('nyMdIcons')
     .directive('nyMdIcon', NyMdIcon);
