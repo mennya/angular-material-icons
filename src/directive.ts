@@ -32,7 +32,8 @@ module nyMdIcons {
 
           if (!size) size = DEFAULT_SIZE;
           if ($attr['size']) size = $attr['size'];
-
+          
+          resizeIcon();
           // render
           $element.html(getSvgHtml(size, shapes[icon]));
         }
@@ -65,7 +66,16 @@ module nyMdIcons {
           $element.children()[0].setAttribute('width', newsize);
           $element.children()[0].setAttribute('height', newsize);
           size = newsize;
+          resizeIcon();
         }
+
+        function resizeIcon() {
+            $element.css({
+                height: size + 'px',
+                width: size + 'px'
+            });
+        }
+
 
       }
     };
